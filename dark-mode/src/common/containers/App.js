@@ -1,5 +1,10 @@
 import React from 'react';
+import { ThemeProvider } from '../../common/contexts/themeContext';
 
 export default function App({ children }) {
-  return children;
+  return (
+    <ThemeProvider>
+      {children}
+    </ThemeProvider>
+  )
 }
